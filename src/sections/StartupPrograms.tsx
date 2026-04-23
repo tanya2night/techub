@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion';
 import { Rocket, Lightbulb, Users, GraduationCap } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useLanguage } from '@/context/LanguageContext';
 
 interface StartupProgramsProps {
   onExpressInterest: () => void;
 }
 
 export default function StartupPrograms({ onExpressInterest }: StartupProgramsProps) {
-  const { ref, isVisible } = useScrollAnimation<HTMLDivElement>();
+  const { ref, isVisible } = useScrollAnimation();
   const { t } = useLanguage();
 
   const programs = [

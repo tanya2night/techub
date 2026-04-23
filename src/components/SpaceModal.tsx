@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, MapPin, Maximize } from 'lucide-react';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { useLanguage } from '@/context/LanguageContext';
 
 interface SpaceModalProps {
   isOpen: boolean;
@@ -66,7 +66,7 @@ export default function SpaceModal({ isOpen, onClose, space, onExpressInterest }
             <div className="relative h-64 md:h-80">
               <img
                 src={space.image}
-                alt={t(space.titleKey)}
+                alt={Array.isArray(t(space.titleKey)) ? t(space.titleKey)[0] : t(space.titleKey) as string}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
