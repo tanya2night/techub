@@ -112,7 +112,7 @@ export function About() {
     {
       icon: Users,
       title: 'JOBS',
-      description: 'From a successful product on the market to new jobs in our valley. We support you at every step of the journey and create conditions for the growth and development of your company.',
+      description: 'From a successful product on the market to new jobs in our region. We support you at every step of the journey and create conditions for the growth and development of your company.',
     },
   ];
 
