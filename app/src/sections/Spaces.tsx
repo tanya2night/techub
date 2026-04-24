@@ -187,7 +187,7 @@ export function Spaces() {
         { title: 'Shared infrastructure', desc: '' },
         { title: 'Location on the first floor', desc: '' },
       ],
-      image: '/images/space-coworking-new.jpg',
+      image: '/images/space-coworking-new.png',
       icon: Users,
       color: 'from-green-500 to-emerald-500',
       showInterestButton: true,
